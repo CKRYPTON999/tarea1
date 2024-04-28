@@ -17,7 +17,7 @@
         </div>
         <div class="table-responsive">
             <table class="table table-bordered">
-                <thead class="thead-dark">
+                <thead class="thead-dark text-center">
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
@@ -33,7 +33,7 @@
 
                     if ($resultado->num_rows > 0) {
                         while($fila = $resultado->fetch_assoc()) {
-                            echo "<tr><td>".$fila["id"]."</td><td>".$fila["name"]."</td><td>".$fila["email"]."</td></tr>";
+                            echo "<tr><td class='text-center'>".$fila["id"]."</td><td class='text-center'>".$fila["name"]."</td><td class='text-center'>".$fila["email"]."</td></tr>";
                         }
                     } else {
                         echo "<tr><td colspan='3'>No se encontraron usuarios.</td></tr>";
